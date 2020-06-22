@@ -1,4 +1,4 @@
-{% set version = "1.1.1-7" %}
+{% set version = "1.1.1-9" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/nlmixr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/nlmixr/nlmixr_{{ version }}.tar.gz
-  sha256: fc5b3b9ef905e27fb5b0d59c43ad557672a26b942212d39f1895216d297083b6
+  sha256: ec342cc3b91491d25f2a02382f168b884babbe72fa62c1d7dfa87b57385770fa
 
 build:
   merge_build_host: true  # [win]
@@ -27,16 +27,16 @@ requirements:
     - {{ compiler('m2w64_c') }}        # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
-    - {{posix}}filesystem        # [win]
-    - {{posix}}sed               # [win]
-    - {{posix}}grep              # [win]
-    - {{posix}}autoconf
-    - {{posix}}automake          # [not win]
-    - {{posix}}automake-wrapper  # [win]
-    - {{posix}}pkg-config
-    - {{posix}}make
-    - {{posix}}coreutils         # [win]
-    - {{posix}}zip               # [win]
+    - {{ posix }}filesystem        # [win]
+    - {{ posix }}sed               # [win]
+    - {{ posix }}grep              # [win]
+    - {{ posix }}autoconf
+    - {{ posix }}automake          # [not win]
+    - {{ posix }}automake-wrapper  # [win]
+    - {{ posix }}pkg-config
+    - {{ posix }}make
+    - {{ posix }}coreutils         # [win]
+    - {{ posix }}zip               # [win]
   host:
     - libblas
     - liblapack
@@ -77,7 +77,7 @@ requirements:
     - libblas
     - liblapack
     - r-base
-    - {{native}}gcc-libs         # [win]
+    - {{ native }}gcc-libs         # [win]
     - r-bh
     - r-matrix
     - r-r.utils
@@ -119,9 +119,8 @@ test:
 about:
   home: https://github.com/nlmixrdevelopment/nlmixr
   license: GPL-2
-  summary: Fit and compare nonlinear mixed-effects models in differential equations with flexible dosing information commonly seen in pharmacokinetics and pharmacodynamics
-    (Almquist, Leander, and Jirstrand 2015 <doi:10.1007/s10928-015-9409-1>). Differential equation solving is by compiled C code provided in the 'RxODE' package (Wang,
-    Hallow, and James 2015 <doi:10.1002/psp4.12052>).
+  summary: Fit and compare nonlinear mixed-effects models in differential equations with flexible dosing information commonly seen in pharmacokinetics and pharmacodynamics (Almquist, Leander, and Jirstrand 2015 <doi:10.1007/s10928-015-9409-1>). Differential equation solving is by compiled C code provided in the 'RxODE' package
+    (Wang, Hallow, and James 2015 <doi:10.1002/psp4.12052>).
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
