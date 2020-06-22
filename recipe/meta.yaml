@@ -62,6 +62,7 @@ requirements:
     - r-lattice
     - r-lbfgs
     - r-lbfgsb3c
+    - r-lotri
     - r-magrittr
     - r-memoise
     - r-minqa
@@ -99,6 +100,7 @@ requirements:
     - r-lattice
     - r-lbfgs
     - r-lbfgsb3c
+    - r-lotri
     - r-magrittr
     - r-memoise
     - r-minqa
@@ -118,7 +120,7 @@ test:
 
 about:
   home: https://github.com/nlmixrdevelopment/nlmixr
-  license: GPL-2
+  license: GPL-2.0-or-later
   summary: Fit and compare nonlinear mixed-effects models in differential equations with flexible dosing information commonly seen in pharmacokinetics and pharmacodynamics (Almquist, Leander, and Jirstrand 2015 <doi:10.1007/s10928-015-9409-1>). Differential equation solving is by compiled C code provided in the 'RxODE' package
     (Wang, Hallow, and James 2015 <doi:10.1002/psp4.12052>).
   license_family: GPL2
