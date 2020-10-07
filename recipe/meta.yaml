@@ -19,7 +19,7 @@ build:
     - lib/R/lib/
     - lib/
   # Unskip win when "CXX14 not defined" issue has a fix
-  skip: true  # [r_base == "3.5.1" or win]
+  skip: true  # [win]
 
 requirements:
   build:
