@@ -38,6 +38,8 @@ requirements:
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
   host:
+    - libblas
+    - liblapack
     - r-base
     - r-bh
     - r-matrix
