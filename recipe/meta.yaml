@@ -43,75 +43,47 @@ requirements:
     - r-base
     - r-bh
     - r-matrix
-    - r-r.utils
     - r-rcpp >=0.12.3
     - r-rcpparmadillo >=0.5.600.2.0
     - r-rcppeigen >=0.3.3.3.0
-    - r-rxode >=0.9.1_7
+    - r-rxode >=1.0.6
     - r-stanheaders >=2.18.0
+    - r-backports
     - r-brew
-    - r-cli
-    - r-crayon
-    - r-digest
     - r-dparser
     - r-fastghquad
-    - r-flextable
-    - r-generics
     - r-ggplot2
-    - r-huxtable
-    - r-lattice
-    - r-lbfgs
     - r-lbfgsb3c
-    - r-lotri
     - r-magrittr
-    - r-memoise
     - r-minqa
-    - r-n1qn1
+    - r-n1qn1 >=6.0.1_10
     - r-nlme
     - r-rex
-    - r-stringr
-    - r-sys
-    - r-tidyr
-    - r-vpc >=1.0.0
-    - r-yaml
+    - r-symengine
   run:
     - libblas
     - liblapack
     - r-base
     - {{ native }}gcc-libs         # [win]
-    - r-bh
+    #- r-bh
     - r-matrix
-    - r-r.utils
     - r-rcpp >=0.12.3
     - r-rcpparmadillo >=0.5.600.2.0
     - r-rcppeigen >=0.3.3.3.0
-    - r-rxode >=0.9.1_7
+    - r-rxode >=1.0.6
     - r-stanheaders >=2.18.0
+    - r-backports
     - r-brew
-    - r-cli
-    - r-crayon
-    - r-digest
     - r-dparser
     - r-fastghquad
-    - r-flextable
-    - r-generics
     - r-ggplot2
-    - r-huxtable
-    - r-lattice
-    - r-lbfgs
     - r-lbfgsb3c
-    - r-lotri
     - r-magrittr
-    - r-memoise
     - r-minqa
-    - r-n1qn1
+    - r-n1qn1 >=6.0.1_10
     - r-nlme
     - r-rex
-    - r-stringr
-    - r-sys
-    - r-tidyr
-    - r-vpc >=1.0.0
-    - r-yaml
+    - r-symengine
 
 test:
   commands:
